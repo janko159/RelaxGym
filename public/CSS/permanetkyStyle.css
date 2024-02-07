@@ -1,0 +1,179 @@
+body {
+    font-weight: bold;
+
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(198, 109, 0)), url('https://cdnb.artstation.com/p/assets/images/images/054/009/205/large/andres-render-7.jpg?1663568699');
+    background-size: 100% 125vh;
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+a i {
+    color: white;
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 1%;
+    padding-left: 1%;
+    animation: glow 4s ease-in-out infinite alternate;
+}
+
+.header {
+    margin-top: 30px;
+    padding-left: 15px;
+}
+
+form {
+    font-weight: bold;
+    text-shadow: 2px 2px #551e00;
+    font-size: 1.4rem;
+
+    font-family: Arial, sans-serif;
+    color: rgb(255, 247, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+select {
+    max-width: 20%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    text-emphasis-color: rgb(0, 255, 47);
+
+}
+
+
+
+button[type=submit] {
+
+    background-color: #ffa600;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: auto;
+    animation: pulse 4s infinite;
+}
+
+button[type=submit]:hover {
+    background-color: #f68623;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    animation: glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+@keyframes glow {
+    0% {
+        color: #ffb300;
+        text-shadow: 0 0 10px #ffbf00;
+    }
+
+    50% {
+        color: rgb(255, 170, 0);
+        text-shadow: 0 0 20px rgb(255, 94, 0);
+    }
+
+    100% {
+        color: #ff9500;
+        text-shadow: 0 0 10px #b64600;
+    }
+}
+
+
+/* popUp */
+
+.popup{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup i{
+    width: 100px;
+    font-size: 7.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.popup h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 25px 0 10px;
+    font-family: Arial, sans-serif;
+}
+
+.popup p{
+    font-size: 16px;
+}
+
+.popup a{
+    width: 100%;
+    margin-top: 7%;
+    padding: 10px 0;
+    background-color:rgb(224, 126, 6);
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.popup a:hover{
+    background-color:rgba(224, 126, 6, 0.9);
+}
+

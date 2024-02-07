@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(35, 33, 33);
+}
+
+/* animations */
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    color: white;
+}
+
+a i {
+    color: white;
+    font-size: 3rem;
+    padding: 1% 0% 0% 1%;
+    transition: all 0.3s;
+}
+
+a i:hover{
+    transform: translateX(5px);
+}
+
+.container-fluid{
+    padding: 1% 10%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1px));
+    gap: 40px;
+    justify-content: center;
+}
+
+.container-fluid img{
+   width: 250px;
+   height: 250px;
+}
+
+img{
+    transition: all 0.3s;
+}
+
+img:hover{
+    transform: scale(1.5);
+}
